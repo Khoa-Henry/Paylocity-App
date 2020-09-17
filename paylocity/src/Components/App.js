@@ -1,5 +1,7 @@
 import React from 'react';
+import centering from './centering.css';
 import DashBoard from './DashBoard';
+
 
 class App extends React.Component {
     state={
