@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Components/App';
+// import App from './App';
 // import * as serviceWorker from './serviceWorker';
-
-//something
-//testing
+// import Clocking from './Components/PunchTime/Clocking'
+// import Loading from './Loading'
+import Dashboard from './Components/Dashboardpage/DashBoard';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Dashboard />
   </React.StrictMode>,
   document.getElementById('root')
 );
