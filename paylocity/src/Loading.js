@@ -2,6 +2,9 @@ import React from 'react';
 import Logo from './paylocitylogo.png';
 
 export default class Loading extends React.Component{
+    state={
+        page:'Loading'
+    }
     componentDidMount() {
         document.body.style.backgroundColor = "#ff914d"
     };
