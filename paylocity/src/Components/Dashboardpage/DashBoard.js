@@ -1,6 +1,6 @@
 import React from 'react';
-import profilepic from './person.jpg';
 import Profile from './Profile';
+import AppComponent from './AppComponent';
 
 class DashBoard extends React.Component {
     state={
@@ -14,22 +14,10 @@ class DashBoard extends React.Component {
     render() {
         return (
             <div> 
-                <div className="ui items">
-                    <div className="item">
-                        <div className="ui tiny image">
-                            <img src={profilepic} alt="profile pic"/>
-                        </div>
-                        <div className="content">
-                            <h1 className="header">Henry Nguyen</h1>
-                            <div className="meta">
-                                <h1 className="header">React Developer</h1>
-                            </div>
-                        </div>
-                    </div>      
-                </div>
                 <Profile/>
+                <div className="ui divider" ></div>
+                <AppComponent/>
             </div>
-            
         );
     }
 };

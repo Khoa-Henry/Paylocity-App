@@ -17,7 +17,7 @@ class Clocking extends React.Component {
 
     render() {
         return (
-            <div style={{}}>
+            <div>
                 <ClockHeader/>
                 <div>
                     <Clock />
