@@ -2,12 +2,6 @@ import React from 'react';
 import Logo from './paylocitylogo.png';
 
 export default class Loading extends React.Component{
-    state={
-        page:'Loading'
-    }
-    componentDidMount() {
-        document.body.style.backgroundColor = "#ff914d"
-    };
 
     render(){
         return(
@@ -17,7 +11,7 @@ export default class Loading extends React.Component{
                     <div style={{paddingTop:"50%"}}>
                         <button className="ui inverted orange basic button">Continue</button>
                     </div>  
-                    <div style={{paddingTop:"50%"}}>
+                    <div style={{paddingTop:"40%"}}>
                         <h3>Welcome</h3>
                         <p >"TOGETHER DREAM BIG, START"</p>   
                     </div>
