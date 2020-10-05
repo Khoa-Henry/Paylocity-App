@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
+import App from './App';
 // import * as serviceWorker from './serviceWorker';
-// import Clocking from './Components/PunchTime/Clocking'
-// import Loading from './Loading'
+import Clocking from './Components/PunchTime/Clocking'
+import Loading from './Loading'
 import Dashboard from './Components/Dashboardpage/DashBoard';
+import ToDo from './Components/Todopage/Todo'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard />
+    <ToDo/>
   </React.StrictMode>,
   document.getElementById('root')
 );

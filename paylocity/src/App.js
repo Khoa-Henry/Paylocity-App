@@ -12,10 +12,6 @@ class App extends React.Component {
         CorrectPassword: '123'
     }
 
-    componentDidMount() {
-        document.body.style.backgroundColor = "#ff914d"
-    };
-
     login = ()=>{
         if (this.state.username === this.state.CorrectUsername && this.state.password === this.state.CorrectPassword){
             this.setState({page: 'Dashboard'})
