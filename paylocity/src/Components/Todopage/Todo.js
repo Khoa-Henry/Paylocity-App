@@ -71,8 +71,8 @@ export default function ToDO() {
                 {showList === 'all' ? (
                     <div>
                         <div className="ui divided list" style={{overflow:'auto',width:'auto', height:'550px'}}>
-                            {items.filter(i=> i.type === 'active').map((item)=><div className="item"><input className="ui input" onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox"/>{item.name} {item.type === 'active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content ui button">x</button>:null}</div>)} 
-                            {items.filter(i=> i.type === 'completed').map((item)=><div className="item"><input  onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox"/>{item.name} {item.type === 'active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content ui button">x</button>:null}</div>)}
+                            {items.filter(i=> i.type === 'active').map((item)=><div className="item"><input className="ui input" onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox"/>{item.name} {item.type === 'active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content">x</button>:null}</div>)} 
+                            {items.filter(i=> i.type === 'completed').map((item)=><div className="item"><input  onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox"/>{item.name} {item.type === 'active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content">x</button>:null}</div>)}
                         </div>
                         <div style={{textAlign:'center'}}><button className="ui disabled button">All Tasks: {items.length}</button></div>
                     </div>
@@ -80,7 +80,7 @@ export default function ToDO() {
                 {showList === 'active' ? (
                     <div >
                         <div className="ui divided list" style={{overflow:'auto',width:'auto', height:'550px'}}>
-                            {items.filter(i=>i.type === 'active').map(item=><div className="item"><input className="ui input" onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox" />{item.name} {item.type ==='active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content ui button">x</button>:null}</div>)}
+                            {items.filter(i=>i.type === 'active').map(item=><div className="item"><input className="ui input" onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox" />{item.name} {item.type ==='active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content">x</button>:null}</div>)}
                         </div>
                         <div style={{textAlign:'center'}}><button className="ui disabled button">active Tasks: {items.filter(i=>i.type === 'active').length}</button></div>                   
                     </div>
@@ -88,7 +88,7 @@ export default function ToDO() {
                 {showList === 'completed' ? (
                     <div >
                         <div className="ui divided list" style={{overflow:'auto',width:'auto', height:'550px'}}>
-                            {items.filter(i=>i.type === 'completed').map(item=><div className="item"><input onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox" />{item.name} {item.type ==='active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content ui button">x</button>:null}</div>)}
+                            {items.filter(i=>i.type === 'completed').map(item=><div  className="item"><input onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox" />{item.name} {item.type ==='active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content">x</button>:null}</div>)}
                         </div>
                         <div style={{textAlign:'center'}}><button className="ui disabled button">Completed Tasks: {items.filter(i=>i.type === 'completed').length}</button></div>
                     </div>
