@@ -7,10 +7,11 @@ import Loading from './Loading'
 import Dashboard from './Components/Dashboardpage/DashBoard';
 import ToDo from './Components/Todopage/Todo'
 import Signup from './Signup'
+import Community from './Components/Communitypage/Community'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <Community/>
   </React.StrictMode>,
   document.getElementById('root')
 );
