@@ -11,7 +11,7 @@ import Community from './Components/Communitypage/Community'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Community/>
+    <Dashboard/>
   </React.StrictMode>,
   document.getElementById('root')
 );
