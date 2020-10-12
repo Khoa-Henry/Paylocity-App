@@ -6,10 +6,11 @@ import Clocking from './Components/PunchTime/Clocking'
 import Loading from './Loading'
 import Dashboard from './Components/Dashboardpage/DashBoard';
 import ToDo from './Components/Todopage/Todo'
+import Signup from './Signup'
 
 ReactDOM.render(
   <React.StrictMode>
-    <ToDo/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
