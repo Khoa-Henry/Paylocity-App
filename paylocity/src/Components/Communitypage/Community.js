@@ -12,6 +12,10 @@ import CardActions from '@material-ui/core/CardActions';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import {Avatar} from '@material-ui/core';
+import Mansuit from './Images/mansuit.jpg';
+import Mansuit2 from './Images/mansuit2.jpg';
+import Girlpic from './Images/girlpic.jpg';
+import Girlpic2 from './Images/girlpic2.jpg';
 //import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 //testing push to master
 
@@ -86,8 +90,8 @@ function App() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="teatalk.jpg"
-          title="What's the Tea?"/>
+          image="https://images.unsplash.com/photo-1504465188792-96c4e8752e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
+          title="Good news"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Annoucements
@@ -100,17 +104,17 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src="https://unsplash.com/images/people"/>
+          src="https://images.unsplash.com/photo-1559418068-807707964448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
            Christopher Higgins
           </Typography>
           <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 12, 2020
+            October 14, 2020
             </Typography>
         </Box>
        <Box>
-         {/* <BookmarkBorderIcon/> */}
+         { /* <BookmarkBorderIcon/> */}
        </Box>
       </CardActions>
     </Card>
@@ -120,8 +124,8 @@ function App() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"/>
+          image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
+          title="We Like You"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Shout Outs
@@ -134,13 +138,13 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src="https://unsplash.com/images/people"/>
+          Image src="https://images.unsplash.com/photo-1568493021943-4077b55c95a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
             Kyle Smith
           </Typography>
           <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 12, 2020
+            October 14, 2020
             </Typography>
         </Box>
        <Box>
@@ -154,11 +158,11 @@ function App() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"/>
+          image="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+          title="Pineapple"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Pay Lots Of News
+            Celebrate
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -169,13 +173,13 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src="https://unsplash.com/images/people"/>
+          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
             Maria Sanchaez
           </Typography>
           <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 12, 2020
+            October 14, 2020
             </Typography>
         </Box>
        <Box>
@@ -189,8 +193,8 @@ function App() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"/>
+          image="https://images.unsplash.com/photo-1589394434125-8ae8b2b3d853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+          title="Covid-19"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             COVID-19 Updates
@@ -204,13 +208,13 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src="https://unsplash.com/images/people"/>
+          src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
             Cheryl Morris
           </Typography>
           <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 12, 2020
+              October 14, 2020
             </Typography>
         </Box>
        <Box>
