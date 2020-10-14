@@ -12,6 +12,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import {Avatar} from '@material-ui/core';
+import Mansuit from '../Communitypage/mansuit.jpg';
 //import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 //testing push to master
 
@@ -101,17 +102,17 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src="https://unsplash.com/images/people"/>
+          src={Mansuit.jpg}/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
            Christopher Higgins
           </Typography>
           <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 12, 2020
+            October 14, 2020
             </Typography>
         </Box>
        <Box>
-         {/* <BookmarkBorderIcon/> */}
+         { /* <BookmarkBorderIcon/> */}
        </Box>
       </CardActions>
     </Card>
@@ -135,13 +136,13 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src="https://unsplash.com/images/people"/>
+          src="./mansuit2.jpg"/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
             Kyle Smith
           </Typography>
           <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 12, 2020
+            October 14, 2020
             </Typography>
         </Box>
        <Box>
@@ -170,13 +171,13 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src="https://unsplash.com/images/people"/>
+          src={Mansuit.jpg}/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
             Maria Sanchaez
           </Typography>
           <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 12, 2020
+            October 14, 2020
             </Typography>
         </Box>
        <Box>
@@ -211,7 +212,7 @@ function App() {
             Cheryl Morris
           </Typography>
           <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 12, 2020
+              October 14, 2020
             </Typography>
         </Box>
        <Box>
