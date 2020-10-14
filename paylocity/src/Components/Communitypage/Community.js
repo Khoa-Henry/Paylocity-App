@@ -91,8 +91,8 @@ function App() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="teatalk.jpg"
-          title="What's the Tea?"/>
+          image="https://images.unsplash.com/photo-1504465188792-96c4e8752e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
+          title="Good news"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Annoucements
@@ -105,7 +105,7 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src={Mansuit.jpg}/>
+          src="https://images.unsplash.com/photo-1559418068-807707964448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
            Christopher Higgins
@@ -209,7 +209,7 @@ function App() {
       <CardActions className={classes.CardActions}>
         <Box className={classes.author}>
           <Avatar 
-          src="https://unsplash.com/images/people"/>
+          src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
           <Box ml={2}></Box>
           <Typography variant="subtitle2" component="p">
             Cheryl Morris
