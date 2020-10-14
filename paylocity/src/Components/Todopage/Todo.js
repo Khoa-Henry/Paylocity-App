@@ -1,5 +1,5 @@
 import React from 'react';
-// i created this page
+import {Link} from 'react-router-dom'
 
 export default function ToDO() {
     const [userInput,setUserInput] = React.useState('');
@@ -51,11 +51,12 @@ export default function ToDO() {
     }
 
     return(
-        <div className="ui container">
+        <div >
             <div className="ui segments">
             <div style={{paddingTop:'2%',textAlign:'center'}}>
-                <div style={{border:'double'}} className="ui center aligned header" >
-                    <h1>ToDo</h1>
+                <div style={{border:'double'}} className="ui header" >
+                    <h1>Paylocity Board</h1>
+                    <Link to='/dashboard'><a>Back</a></Link>
                 </div>
                 <div className="ui fluid input">
                 <input

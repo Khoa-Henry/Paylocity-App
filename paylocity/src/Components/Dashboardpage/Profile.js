@@ -1,5 +1,5 @@
 import React from 'react';
-import profilepic from './person.jpg';
+// import profilepic from './person.jpg';
 import './style.css'
 
 
@@ -8,20 +8,20 @@ class Profile extends React.Component {
         return(
             <div className="ui two column stackable grid container" style={{paddingTop:"8%"}}>
                
-                <div class="container">
-                <div class="cover-photo">
-                    <img src="profile.jpg" class="profile"/>    
+                <div className="container">
+                <div className="cover-photo">
+                    <img src="profile.jpg" className="profile" alt="profilepic"/>    
                 </div>
-                <div class="profile-name">Maria Paul</div>
-                <p class="about">Project Manager (Google)<br/>Five Year Experience</p>  
-                <button class="msg-btn">Message</button>
-                <button class="follow-btn">Following</button>
+                <div className="profile-name">Maria Paul</div>
+                <p className="about">Project Manager (Google)<br/>Five Year Experience</p>  
+                <button className="msg-btn">Message</button>
+                <button className="follow-btn">Following</button>
 
                 <div>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>  
+                    <i className="fab fa-facebook"></i>
+                    <i className="fab fa-youtube"></i>
+                    <i className="fab fa-instagram"></i>
+                    <i className="fab fa-twitter"></i>  
                 </div>
                 </div>
             </div>
