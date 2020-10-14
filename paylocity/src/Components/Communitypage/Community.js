@@ -20,7 +20,6 @@ import Girlpic2 from './Images/girlpic2.jpg';
 //testing push to master
 
 
-
 const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: "#fff"

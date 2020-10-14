@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+// import App from './App';
 // import * as serviceWorker from './serviceWorker';
-import Clocking from './Components/PunchTime/Clocking'
-import Loading from './Loading'
-import Dashboard from './Components/Dashboardpage/DashBoard';
-import ToDo from './Components/Todopage/Todo'
-import Signup from './Signup'
-import Community from './Components/Communitypage/Community'
+// import Clocking from './Components/PunchTime/Clocking'
+// import Loading from './Loading'
+// import Dashboard from './Components/Dashboardpage/DashBoard';
+// import ToDo from './Components/Todopage/Todo'
+// import Signup from './Signup'
+// import Community from './Components/Communitypage/Community'
+import Nav from './Nav';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Community/>
+    <Nav/>
   </React.StrictMode>,
   document.getElementById('root')
 );

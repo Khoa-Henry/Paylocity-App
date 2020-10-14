@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import DashBoard from './Components/Dashboardpage/DashBoard';
+// import DashBoard from './Components/Dashboardpage/DashBoard';
 import Logo from './paylocitylogo.png';
 import Axios from 'axios'
+import {Link} from 'react-router-dom';
 
 function App (props) {
 
@@ -9,6 +10,7 @@ function App (props) {
     const [passwordInput, setPasswordInput] = React.useState('')
     const [userData, setUserData] = React.useState([])
     const [err,setErr]= React.useState('')
+    const [dashboard, setDashboard] = React.useState('/login')
     
     useEffect(()=>{
         Axios({
@@ -26,6 +28,8 @@ function App (props) {
             setErr('Cannot find user')
         } else {
             if (userdata.password === passwordInput ){
+                setDashboard('/dashboard')
+                // <Link to='/dashboard'></Link>
                 // go to diff page
             } else {
                setErr('Wrong password')
@@ -56,11 +60,11 @@ function App (props) {
                                     </div>
                                 </div>
                                 <div>
-                                    <button className="ui fluid large orange submit button" onClick={()=>login()}>Login</button>
+                                    <Link to={`${dashboard}`}><button className="ui fluid large orange submit button" onClick={()=>login()}>Login</button></Link>
                                 </div>
                                 <div className="ui horizontal divider">Or</div>
                                 <div className="field">
-                                    <button className="ui fluid large button">Sign-up</button>
+                                    <Link to='/signup'><button className="ui fluid large button">Sign-up</button ></Link>
                                 </div>
                                 {err && <h5 style={{color: 'red'}}>{err}</h5>}
                             </div>
