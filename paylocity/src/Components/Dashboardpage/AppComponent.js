@@ -10,10 +10,12 @@ class AppComponent extends React.Component{
             <div style={{paddingTop:"5%",paddingLeft:"3%", paddingRight:"3%"}}>
                 <div className="ui three column center aligned grid">
                         <div className="column">
-                            <Link to='punchtime'><a>
+                            <Link to='/punchtime'>
+                                <a>
                                 <img className="ui small image" src={PunchIcon} alt="Punch"/>
                                 Punch time
-                            </a></Link>
+                                </a>
+                            </Link>
                         </div>
                         <div className="column">
                             <Link to='/community'><a>

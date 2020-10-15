@@ -9,6 +9,10 @@ import Loading from './Loading';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 export default function Nav(){
+    const [userInput,setUserInput] = React.useState('');
+    const [items, setItems] = React.useState([]);
+    const [showList, setShowList] = React.useState('all');
+
     return(
         <Router>
             <Switch>
@@ -16,10 +20,19 @@ export default function Nav(){
                     <Route path='/dashboard'><Dashboard/></Route>
                     <Route path='/signup'><Signup/></Route>
                     <Route path='/login'><App/></Route>
-                    <Route path='/paylocityboard'><ToDo/></Route>
+                    <Route path='/paylocityboard'>
+                        <ToDo
+                            userInput={userInput}
+                            items={items}
+                            showList={showList}
+                            setUserInput={setUserInput}
+                            setItems={setItems}
+                            setShowList={setShowList}
+                        />
+                    </Route>
                     <Route path='/punchtime'><Clocking/></Route>
                     <Route path='/community'><Community/></Route>
-                </Switch>
+            </Switch>
         </Router>
     )
 }

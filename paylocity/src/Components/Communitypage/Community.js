@@ -16,6 +16,7 @@ import Mansuit from './Images/mansuit.jpg';
 import Mansuit2 from './Images/mansuit2.jpg';
 import Girlpic from './Images/girlpic.jpg';
 import Girlpic2 from './Images/girlpic2.jpg';
+import {Link} from 'react-router-dom';
 //import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 //testing push to master
 
@@ -72,9 +73,9 @@ function App() {
     <div className="App">
        <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <Typography variant="h6" color="primary">
-            Community
-          </Typography>
+          <Link to='/dashboard'><Typography variant="h6" color="primary">
+            Back
+          </Typography></Link>
         </Toolbar>
       </AppBar>
       <Box className={classes.hero}>

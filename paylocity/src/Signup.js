@@ -1,6 +1,7 @@
 import Axios from 'axios';
 import React, { useEffect } from 'react';
 import Logo from './paylocitylogo.png';
+import {Link} from 'react-router-dom';
 
 export default function Signup (){
     const [userName, setUserName] = React.useState('')
@@ -22,7 +23,8 @@ export default function Signup (){
         if(userName !== '' && password !== '' && firstName !== '' && lastName !== ''){
             if(userData.find(i=>i.userName === userName)){
                 setErr('User already exist')
-            }else{
+            }
+            else{
                 let newObject = {
                     userName: userName,
                     password: password,
@@ -69,8 +71,9 @@ export default function Signup (){
                         <label>I agree to the Terms and Conditions</label>
                         </div>
                     </div>
-                    <button className="ui fluid large orange submit button" onClick={()=>storeData()}>Sign-up</button>
                     {err && <h5 style={{color: 'red'}}>{err}</h5>}
+                    <button className="ui fluid large orange submit button" onClick={()=>storeData()}>Sign-up</button>
+                    <Link to='/login'><a>Back</a></Link>
                 </form>
             </div>
         </div>
