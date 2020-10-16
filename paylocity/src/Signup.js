@@ -9,6 +9,8 @@ export default function Signup (){
     const [firstName, setFirstName] = React.useState('')
     const [lastName, setLastName] = React.useState('')
     const [userData, setUserData] = React.useState([])
+    const [position, setPosition] = React.useState('')
+    const [dashboard, setDashboard] = React.useState('/signup')
     const [err,setErr] = React.useState('')
 
     useEffect(()=>{
@@ -30,11 +32,14 @@ export default function Signup (){
                     password: password,
                     firstName: firstName,
                     lastName: lastName,
+                    position: position,
                 }
+                setDashboard('/dashboard')
                 setUserName('')
                 setPassword('')
                 setFirstName('')
                 setLastName('')
+                setPosition('')
                 Axios({
                     method: 'post',
                     url: 'https://5f821b3106957200164331eb.mockapi.io/users',
@@ -66,13 +71,17 @@ export default function Signup (){
                         <input value={lastName} type="text" onChange={(e)=>setLastName(e.target.value)}/>
                     </div>
                     <div className="field">
+                        <label>Position:</label>
+                        <input value={position} type="text" onChange={(e)=>setPosition(e.target.value)}/>
+                    </div>
+                    <div className="field">
                         <div className="ui checkbox">
                         <input type="checkbox" />
                         <label>I agree to the Terms and Conditions</label>
                         </div>
                     </div>
                     {err && <h5 style={{color: 'red'}}>{err}</h5>}
-                    <button className="ui fluid large orange submit button" onClick={()=>storeData()}>Sign-up</button>
+                    <Link to={`${dashboard}`}><button className="ui fluid large orange submit button" onClick={()=>storeData()}>Sign-up</button></Link>
                     <Link to='/login'><a>Back</a></Link>
                 </form>
             </div>
