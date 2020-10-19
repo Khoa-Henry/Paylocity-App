@@ -71,161 +71,161 @@ function App() {
 
   return (
     <div className="App">
-       <AppBar className={classes.appBar} position="static">
-        <Toolbar>
-          <Link to='/dashboard'><Typography variant="h6" color="primary">
-            Back
-          </Typography></Link>
-        </Toolbar>
-      </AppBar>
-      <Box className={classes.hero}>
-        <Box> Pay Lots of News</Box>
-      </Box>
-      <Container maxWidth="lg" className={classes.newsfeedContainer}>
-      <Typography variant="h4" className={classes.newsfeedTitle}>
-        What's The News?
-      </Typography>
-      <Grid container spacing={3}>
-      <Grid item xs={12} sm={6} md={4}>
-        <Card className={classes.Card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://images.unsplash.com/photo-1504465188792-96c4e8752e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
-          title="Good news"/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Annoucements
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-           ATTENTION TO ALL EMPLOYEES: All employees MUST attend mandortory safety meeting on October 13, 2020 at 1:30pm!!!!! Please be on time!!
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions className={classes.CardActions}>
-        <Box className={classes.author}>
-          <Avatar 
-          src="https://images.unsplash.com/photo-1559418068-807707964448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-          <Box ml={2}></Box>
-          <Typography variant="subtitle2" component="p">
-           Christopher Higgins
-          </Typography>
-          <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 14, 2020
-            </Typography>
+        <AppBar className={classes.appBar} position="static">
+          <Toolbar>
+            <Link to='/dashboard'><Typography variant="h6" color="primary">
+              Back
+            </Typography></Link>
+          </Toolbar>
+        </AppBar>
+        <Box className={classes.hero}>
+          <Box> Pay Lots of News</Box>
         </Box>
-       <Box>
-         { /* <BookmarkBorderIcon/> */}
-       </Box>
-      </CardActions>
-    </Card>
-        </Grid>
+        <Container maxWidth="lg" className={classes.newsfeedContainer}>
+        <Typography variant="h4" className={classes.newsfeedTitle}>
+          What's The News?
+        </Typography>
+        <Grid container spacing={3}>
         <Grid item xs={12} sm={6} md={4}>
-        <Card className={classes.Card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
-          title="We Like You"/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Shout Outs
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          We would like to give a BIG SHOUTOUT to Megan for best attendance this year!
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions className={classes.CardActions}>
-        <Box className={classes.author}>
-          <Avatar 
-          Image src="https://images.unsplash.com/photo-1568493021943-4077b55c95a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-          <Box ml={2}></Box>
-          <Typography variant="subtitle2" component="p">
-            Kyle Smith
-          </Typography>
-          <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 14, 2020
+          <Card className={classes.Card}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="https://images.unsplash.com/photo-1504465188792-96c4e8752e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
+            title="Good news"/>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Annoucements
             </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+            ATTENTION TO ALL EMPLOYEES: All employees MUST attend mandortory safety meeting on October 13, 2020 at 1:30pm!!!!! Please be on time!!
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions className={classes.CardActions}>
+          <Box className={classes.author}>
+            <Avatar 
+            src="https://images.unsplash.com/photo-1559418068-807707964448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+            Christopher Higgins
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+              October 14, 2020
+              </Typography>
+          </Box>
+        <Box>
+          { /* <BookmarkBorderIcon/> */}
         </Box>
-       <Box>
-         {/* <BookmarkBorderIcon/> */}
-       </Box>
-      </CardActions>
-    </Card>
-      </Grid>
-      <Grid item xs={12} sm={6} md={4}>
-      <Card className={classes.Card}>
-      <CardActionArea>
-        <CardMedia
+        </CardActions>
+      </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+          <Card className={classes.Card}>
+        <CardActionArea>
+          <CardMedia
             className={classes.media}
             image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
             title="We Like You"/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Celebrate
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions className={classes.CardActions}>
-        <Box className={classes.author}>
-          <Avatar 
-          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
-          <Box ml={2}></Box>
-          <Typography variant="subtitle2" component="p">
-            Maria Sanchaez
-          </Typography>
-          <Typography variant="subtitle2" color="textSecondary" component="p">
-            October 14, 2020
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Shout Outs
             </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+            We would like to give a BIG SHOUTOUT to Megan for best attendance this year!
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions className={classes.CardActions}>
+          <Box className={classes.author}>
+            <Avatar 
+            Image src="https://images.unsplash.com/photo-1568493021943-4077b55c95a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+              Kyle Smith
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+              October 14, 2020
+              </Typography>
+          </Box>
+        <Box>
+          {/* <BookmarkBorderIcon/> */}
         </Box>
-       <Box>
-         {/* <BookmarkBorderIcon/> */}
-       </Box>
-      </CardActions>
-    </Card>
+        </CardActions>
+      </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
         <Card className={classes.Card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://images.unsplash.com/photo-1589394434125-8ae8b2b3d853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-          title="Covid-19"/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            COVID-19 Updates
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-           Covid cases continue to skyrocket as the summer comes to an end. More than 2,000
-            people have tested positive for Covid-19. What does the winter bring, some say that cases will continue to rise throughout the winter season.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions className={classes.CardActions}>
-        <Box className={classes.author}>
-          <Avatar 
-          src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-          <Box ml={2}></Box>
-          <Typography variant="subtitle2" component="p">
-            Cheryl Morris
-          </Typography>
-          <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 14, 2020
+        <CardActionArea>
+          <CardMedia
+              className={classes.media}
+              image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
+              title="We Like You"/>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Celebrate
             </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+              across all continents except Antarctica
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions className={classes.CardActions}>
+          <Box className={classes.author}>
+            <Avatar 
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+              Maria Sanchaez
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+              October 14, 2020
+              </Typography>
+          </Box>
+        <Box>
+          {/* <BookmarkBorderIcon/> */}
         </Box>
-       <Box>
-         {/* <BookmarkBorderIcon/> */}
-       </Box>
-      </CardActions>
-    </Card>
+        </CardActions>
+      </Card>
           </Grid>
-          </Grid>
-      </Container>
+          <Grid item xs={12} sm={6} md={4}>
+          <Card className={classes.Card}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="https://images.unsplash.com/photo-1589394434125-8ae8b2b3d853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+            title="Covid-19"/>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              COVID-19 Updates
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+            Covid cases continue to skyrocket as the summer comes to an end. More than 2,000
+              people have tested positive for Covid-19. What does the winter bring, some say that cases will continue to rise throughout the winter season.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions className={classes.CardActions}>
+          <Box className={classes.author}>
+            <Avatar 
+            src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+              Cheryl Morris
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+                October 14, 2020
+              </Typography>
+          </Box>
+        <Box>
+          {/* <BookmarkBorderIcon/> */}
+        </Box>
+        </CardActions>
+      </Card>
+            </Grid>
+            </Grid>
+        </Container>
     </div>
   );
 }
