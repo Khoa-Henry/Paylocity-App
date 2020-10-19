@@ -9,17 +9,58 @@ import Loading from './Loading';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 export default function Nav(){
+    const [userInput,setUserInput] = React.useState('');
+    const [items, setItems] = React.useState([]);
+    const [showList, setShowList] = React.useState('all');
+    const [userData, setUserData] = React.useState([]);
+    const [currentUser, setCurrentUser] = React.useState([]);
+
     return(
         <Router>
             <Switch>
                     <Route exact path='/'><Loading/></Route>
-                    <Route path='/dashboard'><Dashboard/></Route>
-                    <Route path='/signup'><Signup/></Route>
-                    <Route path='/login'><App/></Route>
-                    <Route path='/paylocityboard'><ToDo/></Route>
+                    <Route path='/dashboard'>
+                        <Dashboard
+                            userData={userData}
+                            setUserData={setUserData}
+                            currentUser={currentUser}
+                            setCurrentUser={setCurrentUser}
+                        />
+                    </Route>
+                    <Route path='/signup'>
+                        <Signup
+                            userData={userData}
+                            setUserData={setUserData}
+                        />
+                    </Route>
+                    <Route path='/login'>
+                        <App
+                            userData={userData}
+                            setUserData={setUserData}
+                            currentUser={currentUser}
+                            setCurrentUser={setCurrentUser}
+                        />
+                    </Route>
+                    <Route path='/paylocityboard'>
+                        <ToDo
+                            userInput={userInput}
+                            items={items}
+                            showList={showList}
+                            setUserInput={setUserInput}
+                            setItems={setItems}
+                            setShowList={setShowList}
+                        />
+                    </Route>
                     <Route path='/punchtime'><Clocking/></Route>
-                    <Route path='/community'><Community/></Route>
-                </Switch>
+                    <Route path='/community'>
+                        <Community
+                            userData={userData}
+                            setUserData={setUserData}
+                            currentUser={currentUser}
+                            setCurrentUser={setCurrentUser}
+                        />
+                    </Route>
+            </Switch>
         </Router>
     )
 }

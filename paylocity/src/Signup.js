@@ -1,6 +1,7 @@
 import Axios from 'axios';
 import React, { useEffect } from 'react';
 import Logo from './paylocitylogo.png';
+import {Link} from 'react-router-dom';
 
 export default function Signup (){
     const [userName, setUserName] = React.useState('')
@@ -8,6 +9,8 @@ export default function Signup (){
     const [firstName, setFirstName] = React.useState('')
     const [lastName, setLastName] = React.useState('')
     const [userData, setUserData] = React.useState([])
+    const [position, setPosition] = React.useState('')
+    const [dashboard, setDashboard] = React.useState('/signup')
     const [err,setErr] = React.useState('')
 
     useEffect(()=>{
@@ -22,17 +25,21 @@ export default function Signup (){
         if(userName !== '' && password !== '' && firstName !== '' && lastName !== ''){
             if(userData.find(i=>i.userName === userName)){
                 setErr('User already exist')
-            }else{
+            }
+            else{
                 let newObject = {
                     userName: userName,
                     password: password,
                     firstName: firstName,
                     lastName: lastName,
+                    position: position,
                 }
+                setDashboard('/dashboard')
                 setUserName('')
                 setPassword('')
                 setFirstName('')
                 setLastName('')
+                setPosition('')
                 Axios({
                     method: 'post',
                     url: 'https://5f821b3106957200164331eb.mockapi.io/users',
@@ -64,13 +71,18 @@ export default function Signup (){
                         <input value={lastName} type="text" onChange={(e)=>setLastName(e.target.value)}/>
                     </div>
                     <div className="field">
+                        <label>Position:</label>
+                        <input value={position} type="text" onChange={(e)=>setPosition(e.target.value)}/>
+                    </div>
+                    <div className="field">
                         <div className="ui checkbox">
                         <input type="checkbox" />
                         <label>I agree to the Terms and Conditions</label>
                         </div>
                     </div>
-                    <button className="ui fluid large orange submit button" onClick={()=>storeData()}>Sign-up</button>
                     {err && <h5 style={{color: 'red'}}>{err}</h5>}
+                    <Link to={`${dashboard}`}><button className="ui fluid large orange submit button" onClick={()=>storeData()}>Sign-up</button></Link>
+                    <Link to='/login'><a>Back</a></Link>
                 </form>
             </div>
         </div>

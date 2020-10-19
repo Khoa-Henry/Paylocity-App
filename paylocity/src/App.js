@@ -5,31 +5,31 @@ import Axios from 'axios'
 import {Link} from 'react-router-dom';
 
 function App (props) {
-
     const [userNameInput, setUserNameInput] = React.useState('')
     const [passwordInput, setPasswordInput] = React.useState('')
-    const [userData, setUserData] = React.useState([])
     const [err,setErr]= React.useState('')
-    const [dashboard, setDashboard] = React.useState('/login')
+    const [dashboard, setDashboard] = React.useState('login')
     
     useEffect(()=>{
         Axios({
             method:'get',
             url:'https://5f821b3106957200164331eb.mockapi.io/users',
-        }).then(res=>setUserData(res.data))
+        }).then(res=>props.setUserData(res.data))
     })
 
 
 
 
     const login = ()=>{
-        let userdata = userData.find(i=>i.userName === userNameInput)
+        let userdata = props.userData.find(i=>i.userName === userNameInput)
+        // let newArray = props.userData.findIndex(i=>i.)
         if (!userdata){
             setErr('Cannot find user')
         } else {
             if (userdata.password === passwordInput ){
                 setDashboard('/dashboard')
-                // <Link to='/dashboard'></Link>
+                
+                props.setCurrentUser([userdata])
                 // go to diff page
             } else {
                setErr('Wrong password')
