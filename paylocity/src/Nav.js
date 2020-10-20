@@ -8,12 +8,18 @@ import Community from './Components/Communitypage/Community';
 import Loading from './Loading';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
+
 export default function Nav(){
     const [userInput,setUserInput] = React.useState('');
     const [items, setItems] = React.useState([]);
     const [showList, setShowList] = React.useState('all');
     const [userData, setUserData] = React.useState([]);
     const [currentUser, setCurrentUser] = React.useState([]);
+    const [show, setShow] = React.useState(false);
+
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return(
         <Router>
@@ -25,12 +31,16 @@ export default function Nav(){
                             setUserData={setUserData}
                             currentUser={currentUser}
                             setCurrentUser={setCurrentUser}
+                            show={show}
+                            setShow={setShow}
                         />
                     </Route>
                     <Route path='/signup'>
                         <Signup
                             userData={userData}
                             setUserData={setUserData}
+                            currentUser={currentUser}
+                            setCurrentUser={setCurrentUser}
                         />
                     </Route>
                     <Route path='/login'>
@@ -39,6 +49,8 @@ export default function Nav(){
                             setUserData={setUserData}
                             currentUser={currentUser}
                             setCurrentUser={setCurrentUser}
+                            show={show}
+                            setShow={setShow}
                         />
                     </Route>
                     <Route path='/paylocityboard'>
