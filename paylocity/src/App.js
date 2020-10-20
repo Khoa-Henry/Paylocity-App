@@ -30,6 +30,7 @@ function App (props) {
                 setDashboard('/dashboard')
                 
                 props.setCurrentUser([userdata])
+                props.setShow(true)
                 // go to diff page
             } else {
                setErr('Wrong password')

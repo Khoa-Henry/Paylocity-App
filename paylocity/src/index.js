@@ -9,6 +9,8 @@ import ReactDOM from 'react-dom';
 // import Signup from './Signup'
 // import Community from './Components/Communitypage/Community'
 import Nav from './Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(
   <React.StrictMode>

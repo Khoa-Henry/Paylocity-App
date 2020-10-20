@@ -2,8 +2,9 @@ import Axios from 'axios';
 import React, { useEffect } from 'react';
 import Logo from './paylocitylogo.png';
 import {Link} from 'react-router-dom';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
-export default function Signup (){
+export default function Signup (props){
     const [userName, setUserName] = React.useState('')
     const [password, setPassword] = React.useState('')
     const [firstName, setFirstName] = React.useState('')
@@ -40,6 +41,7 @@ export default function Signup (){
                 setFirstName('')
                 setLastName('')
                 setPosition('')
+                props.setCurrentUser([newObject])
                 Axios({
                     method: 'post',
                     url: 'https://5f821b3106957200164331eb.mockapi.io/users',
