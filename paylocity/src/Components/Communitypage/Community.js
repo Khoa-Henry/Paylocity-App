@@ -90,9 +90,18 @@ function App() {
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.Card}>
         <CardActionArea>
-        <Box>
-          <TextField/>
-        </Box>
+        <Box className={classes.author}>
+            <Avatar 
+            src="https://images.unsplash.com/photo-1559418068-807707964448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+            Christopher Higgins
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+              October 14, 2020
+              </Typography>
+          </Box>
+       
           {/* Insert profile bar */}
           <CardMedia
             className={classes.media}
@@ -109,26 +118,26 @@ function App() {
         </CardActionArea>
         <CardActions className={classes.CardActions}>
         {/* //The box element is the profile bar replace this with engagemnet bar add like share and comment icons */}
-          <Box className={classes.author}>
-            <Avatar 
-            src="https://images.unsplash.com/photo-1559418068-807707964448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-            <Box ml={2}></Box>
-            <Typography variant="subtitle2" component="p">
-            Christopher Higgins
-            </Typography>
-            <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 14, 2020
-              </Typography>
-          </Box>
+          <Box>
+          <TextField/> <i className="ui heart icon"></i>
+        </Box>
         </CardActions>
       </Card>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.Card}>
         <CardActionArea>
-        <Box>
-          <TextField/>
-        </Box>
+        <Box className={classes.author}>
+            <Avatar 
+            Image src="https://images.unsplash.com/photo-1568493021943-4077b55c95a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+              Kyle Smith
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+              October 14, 2020
+              </Typography>
+              </Box>
           <CardMedia
             className={classes.media}
             image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
@@ -143,30 +152,30 @@ function App() {
           </CardContent>
         </CardActionArea>
         <CardActions className={classes.CardActions}>
-          <Box className={classes.author}>
-            <Avatar 
-            Image src="https://images.unsplash.com/photo-1568493021943-4077b55c95a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-            <Box ml={2}></Box>
-            <Typography variant="subtitle2" component="p">
-              Kyle Smith
-            </Typography>
-            <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 14, 2020
-              </Typography>
-          </Box>
+              <Box>
+          <TextField/> <i className="ui heart icon"></i>
+        </Box>
         </CardActions>
       </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
         <Card className={classes.Card}>
         <CardActionArea>
-        <Box>
-          <TextField/>
-        </Box>
+        <Box className={classes.author}>
+            <Avatar 
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+              Maria Sanchaez
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+              October 20, 2020
+              </Typography>
+              </Box>
           <CardMedia
               className={classes.media}
-              image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
-              title="We Like You"/>
+              image="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              title="Pineapple"/>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               Celebrate
@@ -178,26 +187,26 @@ function App() {
           </CardContent>
         </CardActionArea>
         <CardActions className={classes.CardActions}>
-          <Box className={classes.author}>
-            <Avatar 
-            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
-            <Box ml={2}></Box>
-            <Typography variant="subtitle2" component="p">
-              Maria Sanchaez
-            </Typography>
-            <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 14, 2020
-              </Typography>
-          </Box>
+        <Box>
+          <TextField/> <i className="ui heart icon"></i>
+        </Box>
         </CardActions>
       </Card>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.Card}>
         <CardActionArea>
-        <Box>
-          <TextField/>
-        </Box>
+        <Box className={classes.author}>
+            <Avatar 
+            src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+              Cheryl Morris
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+                October 20, 2020
+              </Typography>
+              </Box>
           <CardMedia
             className={classes.media}
             image="https://images.unsplash.com/photo-1589394434125-8ae8b2b3d853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
@@ -213,17 +222,9 @@ function App() {
           </CardContent>
         </CardActionArea>
         <CardActions className={classes.CardActions}>
-          <Box className={classes.author}>
-            <Avatar 
-            src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-            <Box ml={2}></Box>
-            <Typography variant="subtitle2" component="p">
-              Cheryl Morris
-            </Typography>
-            <Typography variant="subtitle2" color="textSecondary" component="p">
-                October 14, 2020
-              </Typography>
-          </Box>
+              <Box>
+          <TextField/> <i className="ui heart icon"></i>
+        </Box>
         <Box>
           {/* <BookmarkBorderIcon/> */}
         </Box>
