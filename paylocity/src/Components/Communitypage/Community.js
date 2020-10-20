@@ -18,7 +18,7 @@ import Girlpic from './Images/girlpic.jpg';
 import Girlpic2 from './Images/girlpic2.jpg';
 import {TextField} from '@material-ui/core';
 import {Link} from 'react-router-dom';
-//import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+// import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 //testing push to master
 
 
@@ -67,7 +67,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function App() {
+function Dashboard(props) {
+  // const
+
   const classes = useStyles();
 
   return (
@@ -113,7 +115,10 @@ function App() {
             </Typography>
             <Typography variant="subtitle2" color="textSecondary" component="p">
               October 14, 2020
-              </Typography>
+            </Typography>
+          </Box>
+          <Box>
+          <i class="heart outline icon"></i>
           </Box>
         <Box>
           <TextField/>
@@ -150,7 +155,7 @@ function App() {
               </Typography>
           </Box>
         <Box>
-          {/* <BookmarkBorderIcon/> */}
+          {/* <BookmarkBorderIcon/> */}<i class="heart outline icon"></i>
         </Box>
         </CardActions>
       </Card>
@@ -185,7 +190,7 @@ function App() {
               </Typography>
           </Box>
         <Box>
-          {/* <BookmarkBorderIcon/> */}
+          {/* <BookmarkBorderIcon/> */}<i class="heart outline icon"></i>
         </Box>
         </CardActions>
       </Card>
@@ -220,7 +225,7 @@ function App() {
               </Typography>
           </Box>
         <Box>
-          {/* <BookmarkBorderIcon/> */}
+          {/* <BookmarkBorderIcon/> */}<i class="heart outline icon"></i>
         </Box>
         </CardActions>
       </Card>
@@ -231,4 +236,4 @@ function App() {
   );
 }
 
-export default App;
+export default Dashboard;

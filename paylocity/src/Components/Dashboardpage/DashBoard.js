@@ -6,10 +6,16 @@ import './style.css';
 import { Button } from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import Person from '../Dashboardpage/person.jpg';
+import {Modal, Container, Row, Col } from 'react-bootstrap';
 
 function DashBoard (props) {
+
+    const handleClose = () => props.setShow(false);
+
         
-    // useEffect
+    // useEffect(()=>{
+    // use api to record the the emotions to users
+    // })
 
 
     const logout = ()=>{
@@ -17,7 +23,40 @@ function DashBoard (props) {
     }
 
     return (
+
         <div> 
+            <Modal 
+            show={props.show}
+            onHide={handleClose}
+            backdrop="static"
+            keyboard={false}
+            aria-labelledby="contained-modal-title-vcenter"
+            centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>How are you feeling today?</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className="show-grid">
+                    <Container>
+                        <Row>
+                            <Col style={{color:'red'}}>
+                                Worst
+                            </Col>
+                            <Col style={{color:'orange'}}>
+                                Not Good
+                            </Col >
+                            <Col style={{color:'grey'}}>
+                                Ok
+                            </Col>
+                            <Col style={{color:'green'}}>
+                                Good
+                            </Col>
+                            <Col style={{color:'lime'}}>
+                                Best
+                            </Col>
+                        </Row>
+                    </Container>
+                </Modal.Body>   
+            </Modal>
             <div>
                 <div>
                     {props.currentUser.map(item=>
@@ -28,7 +67,6 @@ function DashBoard (props) {
                                 <div className="sub header">{item.position}</div>
                             </div>
                         </h1>)}
-                    
                     {/* <div>
                         <i className="fab fa-facebook"></i>
                         <i className="fab fa-youtube"></i>
