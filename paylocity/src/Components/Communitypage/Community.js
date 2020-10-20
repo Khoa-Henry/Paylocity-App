@@ -18,7 +18,9 @@ import Girlpic from './Images/girlpic.jpg';
 import Girlpic2 from './Images/girlpic2.jpg';
 import {TextField} from '@material-ui/core';
 import {Link} from 'react-router-dom';
-//import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+// import {ThumbUpIcon} from '@material-ui/core/icons/ThumbUp';//
+// import { SvgIcon } from '@material-ui/core';
+// import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 //testing push to master
 
 
@@ -90,6 +92,18 @@ function App() {
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.Card}>
         <CardActionArea>
+        <Box className={classes.author}>
+            <Avatar 
+            src="https://images.unsplash.com/photo-1559418068-807707964448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+            Christopher Higgins
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+              October 14, 2020
+              </Typography>
+          </Box>
+          {/* Insert profile bar */}
           <CardMedia
             className={classes.media}
             image="https://images.unsplash.com/photo-1504465188792-96c4e8752e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
@@ -104,26 +118,30 @@ function App() {
           </CardContent>
         </CardActionArea>
         <CardActions className={classes.CardActions}>
-          <Box className={classes.author}>
-            <Avatar 
-            src="https://images.unsplash.com/photo-1559418068-807707964448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-            <Box ml={2}></Box>
-            <Typography variant="subtitle2" component="p">
-            Christopher Higgins
-            </Typography>
-            <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 14, 2020
-              </Typography>
-          </Box>
         <Box>
-          <TextField/>
+          {/* <ThumbUpIcon /> */}
+          <input placeholder="comment"/>
         </Box>
+        {/* //The box element is the profile bar replace this with engagemnet bar add like share and comment icons */}
+        
         </CardActions>
       </Card>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.Card}>
         <CardActionArea>
+        <Avatar 
+            Image src="https://images.unsplash.com/photo-1568493021943-4077b55c95a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <Box ml={2}></Box>
+            <Typography variant="subtitle2" component="p">
+              Kyle Smith
+            </Typography>
+            <Typography variant="subtitle2" color="textSecondary" component="p">
+              October 14, 2020
+              </Typography>
+        <Box>
+          <TextField/>
+        </Box>
           <CardMedia
             className={classes.media}
             image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
@@ -139,29 +157,21 @@ function App() {
         </CardActionArea>
         <CardActions className={classes.CardActions}>
           <Box className={classes.author}>
-            <Avatar 
-            Image src="https://images.unsplash.com/photo-1568493021943-4077b55c95a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-            <Box ml={2}></Box>
-            <Typography variant="subtitle2" component="p">
-              Kyle Smith
-            </Typography>
-            <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 14, 2020
-              </Typography>
+            
           </Box>
-        <Box>
-          {/* <BookmarkBorderIcon/> */}
-        </Box>
         </CardActions>
       </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
         <Card className={classes.Card}>
         <CardActionArea>
+        <Box>
+          <TextField/>
+        </Box>
           <CardMedia
               className={classes.media}
-              image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
-              title="We Like You"/>
+              image="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              title="Pineapple"/>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               Celebrate
@@ -184,15 +194,15 @@ function App() {
               October 14, 2020
               </Typography>
           </Box>
-        <Box>
-          {/* <BookmarkBorderIcon/> */}
-        </Box>
         </CardActions>
       </Card>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.Card}>
         <CardActionArea>
+        <Box>
+          <TextField/>
+        </Box>
           <CardMedia
             className={classes.media}
             image="https://images.unsplash.com/photo-1589394434125-8ae8b2b3d853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
