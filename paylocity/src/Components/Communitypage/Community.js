@@ -18,9 +18,7 @@ import Girlpic from './Images/girlpic.jpg';
 import Girlpic2 from './Images/girlpic2.jpg';
 import {TextField} from '@material-ui/core';
 import {Link} from 'react-router-dom';
-// import {ThumbUpIcon} from '@material-ui/core/icons/ThumbUp';//
-// import { SvgIcon } from '@material-ui/core';
-// import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+//import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 //testing push to master
 
 
@@ -69,9 +67,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Dashboard(props) {
-  // const
-
+function App() {
   const classes = useStyles();
 
   return (
@@ -105,6 +101,7 @@ function Dashboard(props) {
               October 14, 2020
               </Typography>
           </Box>
+       
           {/* Insert profile bar */}
           <CardMedia
             className={classes.media}
@@ -117,14 +114,13 @@ function Dashboard(props) {
             <Typography variant="body2" color="textSecondary" component="p">
             ATTENTION TO ALL EMPLOYEES: All employees MUST attend mandortory safety meeting on October 13, 2020 at 1:30pm!!!!! Please be on time!!
             </Typography>
-            <Box>
-          <TextField />
-          <i class="heart outline icon"></i>
-          </Box>
           </CardContent>
         </CardActionArea>
         <CardActions className={classes.CardActions}>
         {/* //The box element is the profile bar replace this with engagemnet bar add like share and comment icons */}
+          <Box>
+          <TextField/> <i className="ui heart icon"></i>
+        </Box>
         </CardActions>
       </Card>
           </Grid>
@@ -132,7 +128,7 @@ function Dashboard(props) {
           <Card className={classes.Card}>
         <CardActionArea>
         <Box className={classes.author}>
-          <Avatar 
+            <Avatar 
             Image src="https://images.unsplash.com/photo-1568493021943-4077b55c95a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
             <Box ml={2}></Box>
             <Typography variant="subtitle2" component="p">
@@ -140,12 +136,12 @@ function Dashboard(props) {
             </Typography>
             <Typography variant="subtitle2" color="textSecondary" component="p">
               October 14, 2020
-            </Typography>
-          </Box>
+              </Typography>
+              </Box>
           <CardMedia
             className={classes.media}
             image="https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=783&q=80"
-            title="We Like You"/>
+            title="Pineapple"/>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               Shout Outs
@@ -155,12 +151,9 @@ function Dashboard(props) {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <Box className={classes.author}>
-            </Box>
         <CardActions className={classes.CardActions}>
-        <Box>
-          <TextField/>
-          {/* <BookmarkBorderIcon/> */}<i class="heart outline icon"></i>
+              <Box>
+          <TextField/> <i className="ui heart icon"></i>
         </Box>
         </CardActions>
       </Card>
@@ -176,9 +169,9 @@ function Dashboard(props) {
               Maria Sanchaez
             </Typography>
             <Typography variant="subtitle2" color="textSecondary" component="p">
-              October 14, 2020
+              October 20, 2020
               </Typography>
-          </Box>
+              </Box>
           <CardMedia
               className={classes.media}
               image="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -195,8 +188,7 @@ function Dashboard(props) {
         </CardActionArea>
         <CardActions className={classes.CardActions}>
         <Box>
-          <TextField/>
-          {/* <BookmarkBorderIcon/> */}<i class="heart outline icon"></i>
+          <TextField/> <i className="ui heart icon"></i>
         </Box>
         </CardActions>
       </Card>
@@ -212,7 +204,7 @@ function Dashboard(props) {
               Cheryl Morris
             </Typography>
             <Typography variant="subtitle2" color="textSecondary" component="p">
-                October 14, 2020
+                October 20, 2020
               </Typography>
               </Box>
           <CardMedia
@@ -230,9 +222,11 @@ function Dashboard(props) {
           </CardContent>
         </CardActionArea>
         <CardActions className={classes.CardActions}>
+              <Box>
+          <TextField/> <i className="ui heart icon"></i>
+        </Box>
         <Box>
-          <TextField/>
-          {/* <BookmarkBorderIcon/> */}<i class="heart outline icon"></i>
+          {/* <BookmarkBorderIcon/> */}
         </Box>
         </CardActions>
       </Card>
@@ -243,4 +237,4 @@ function Dashboard(props) {
   );
 }
 
-export default Dashboard;
+export default App;
