@@ -60,7 +60,7 @@ function AppComponent (){
                         <div className="column">
                             <a onClick={()=>handleOpen()}>
                                 <img style={{height:'90px', width:'120px', overflow:'hidden'}} className="ui image" src={Benfits} alt="Benfits"/>
-                                Benfits
+                                Benefits
                             </a>
                         </div>
                         <div className="column">
@@ -72,7 +72,7 @@ function AppComponent (){
                         <div className="column">
                             <a onClick={()=>handleOpen()}>
                                 <img style={{height:'90px', width:'120px', overflow:'hidden'}} className="ui image" src={Setting} alt="Setting"/>
-                                Setting
+                                Settings
                             </a>
                         </div>
                 </div>

@@ -22,7 +22,7 @@ export default class Loading extends React.Component{
                         </div>  
                         <div style={{paddingTop:"40%"}}>
                             <h3>Welcome</h3>
-                            <p >"TOGETHER DREAM BIG, START"</p>   
+                            <p >"TOGETHER DREAM BIG, START SMALL"</p>   
                         </div>
                     </div>
                 </div>

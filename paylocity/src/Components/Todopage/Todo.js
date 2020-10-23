@@ -78,7 +78,7 @@ export default function ToDO(props) {
                 ):null}
                 {props.showList === 'active' ? (
                     <div >
-                        <div className="ui divided list" style={{overflow:'auto',width:'auto', height:'550px'}}>
+                        <div className="ui divided list" style={{overflow:'auto',width:'auto', height:'500px'}}>
                             {props.items.filter(i=>i.type === 'active').map(item=><div className="item"><input className="ui input" onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox" />{item.name} {item.type ==='active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content">x</button>:null}</div>)}
                         </div>
                         <div style={{textAlign:'center'}}><button className="ui disabled button">active Tasks: {props.items.filter(i=>i.type === 'active').length}</button></div>                   
@@ -86,7 +86,7 @@ export default function ToDO(props) {
                 ):null}
                 {props.showList === 'completed' ? (
                     <div >
-                        <div className="ui divided list" style={{overflow:'auto',width:'auto', height:'550px'}}>
+                        <div className="ui divided list" style={{overflow:'auto',width:'auto', height:'500px'}}>
                             {props.items.filter(i=>i.type === 'completed').map(item=><div  className="item"><input onClick={()=>completed(item)} checked={item.type === 'completed'} type="checkbox" />{item.name} {item.type ==='active' ? <button onClickCapture={()=>deleteItem(item)} className="right floated content">x</button>:null}</div>)}
                         </div>
                         <div style={{textAlign:'center'}}><button className="ui disabled button">Completed Tasks: {props.items.filter(i=>i.type === 'completed').length}</button></div>
