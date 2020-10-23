@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Dashboard from './Components/Dashboardpage/DashBoard';
 import Signup from './Signup';
 import App from './App';
@@ -16,10 +16,7 @@ export default function Nav(){
     const [userData, setUserData] = React.useState([]);
     const [currentUser, setCurrentUser] = React.useState([]);
     const [show, setShow] = React.useState(false);
-
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [post, setPost] = React.useState([])
 
     return(
         <Router>
@@ -70,6 +67,8 @@ export default function Nav(){
                             setUserData={setUserData}
                             currentUser={currentUser}
                             setCurrentUser={setCurrentUser}
+                            post={post}
+                            setPost={setPost}
                         />
                     </Route>
             </Switch>
