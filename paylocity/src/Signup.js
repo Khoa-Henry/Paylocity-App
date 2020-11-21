@@ -42,6 +42,7 @@ export default function Signup (props){
                 setLastName('')
                 setPosition('')
                 props.setCurrentUser([newObject])
+                props.setShow(true)
                 Axios({
                     method: 'post',
                     url: 'https://5f821b3106957200164331eb.mockapi.io/users',
@@ -83,7 +84,7 @@ export default function Signup (props){
                         </div>
                     </div>
                     {err && <h5 style={{color: 'red'}}>{err}</h5>}
-                    <Link to={`${dashboard}`}><button className="ui fluid large orange submit button" onClick={()=>storeData()}>Sign-up</button></Link>
+                    <Link to={`${dashboard}`}><button className="ui fluid large primary submit button" onClick={()=>storeData()}>Sign-up</button></Link>
                     <Link to='/login'><a>Back</a></Link>
                 </form>
             </div>

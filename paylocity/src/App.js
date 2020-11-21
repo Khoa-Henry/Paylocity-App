@@ -65,7 +65,7 @@ function App (props) {
                                 </div>
                                 <div className="ui horizontal divider">Or</div>
                                 <div className="field">
-                                    <Link to='/signup'><button className="ui fluid large button">Sign-up</button ></Link>
+                                    <Link to='/signup'><button className="ui fluid primary large button">Sign-up</button ></Link>
                                 </div>
                                 {err && <h5 style={{color: 'red'}}>{err}</h5>}
                             </div>

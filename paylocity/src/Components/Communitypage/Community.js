@@ -201,7 +201,7 @@ function App(props) {
                  id="input-with-icon-adornment"
                  startAdornment={
                    <InputAdornment position="start">
-                     <AccountCircle />
+                     <AccountCircle src={Person} />
                    </InputAdornment>
                  }
                /> 
@@ -249,7 +249,7 @@ function App(props) {
               id="input-with-icon-adornment"
               startAdornment={
                 <InputAdornment position="start">
-                  <AccountCircle />
+                  <AccountCircle src={Person} />
                 </InputAdornment>
               }
             /> 
@@ -290,7 +290,7 @@ function App(props) {
                 id="input-with-icon-adornment"
                 startAdornment={
                   <InputAdornment position="start">
-                    <AccountCircle />
+                    <AccountCircle src={Person} />
                   </InputAdornment>
                 }
               /> 
@@ -332,7 +332,7 @@ function App(props) {
               id="input-with-icon-adornment"
               startAdornment={
                 <InputAdornment position="start">
-                  <AccountCircle />
+                  <AccountCircle src={Person} />
                 </InputAdornment>
               }
             /> 
@@ -375,7 +375,7 @@ function App(props) {
               id="input-with-icon-adornment"
               startAdornment={
                 <InputAdornment position="start">
-                  <AccountCircle />
+                  <AccountCircle src={Person} />
                 </InputAdornment>
               }
             /> 

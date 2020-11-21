@@ -38,6 +38,8 @@ export default function Nav(){
                             setUserData={setUserData}
                             currentUser={currentUser}
                             setCurrentUser={setCurrentUser}
+                            show={show}
+                            setShow={setShow}
                         />
                     </Route>
                     <Route path='/login'>

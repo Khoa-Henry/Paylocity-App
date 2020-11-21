@@ -7,6 +7,11 @@ import { Button } from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import Person from '../Dashboardpage/person.jpg';
 import {Modal, Container, Row, Col } from 'react-bootstrap';
+import SentimentSatisfiedIcon from '@material-ui/icons/SentimentSatisfied';
+import SentimentDissatisfiedOutlinedIcon from '@material-ui/icons/SentimentDissatisfiedOutlined';
+import MoodBadOutlinedIcon from '@material-ui/icons/MoodBadOutlined';
+import SentimentSatisfiedOutlinedIcon from '@material-ui/icons/SentimentSatisfiedOutlined';
+import SentimentVerySatisfiedOutlinedIcon from '@material-ui/icons/SentimentVerySatisfiedOutlined';
 
 function DashBoard (props) {
 
@@ -39,18 +44,23 @@ function DashBoard (props) {
                     <Container>
                         <Row>
                             <Col style={{color:'red'}}>
+                                <MoodBadOutlinedIcon onClick={handleClose}/>
                                 Worst
                             </Col>
                             <Col style={{color:'orange'}}>
+                                <SentimentDissatisfiedOutlinedIcon onClick={handleClose}/>
                                 Not Good
                             </Col >
                             <Col style={{color:'grey'}}>
+                                <SentimentSatisfiedIcon onClick={handleClose}/>
                                 Ok
                             </Col>
                             <Col style={{color:'green'}}>
+                                <SentimentSatisfiedOutlinedIcon onClick={handleClose}/>
                                 Good
                             </Col>
                             <Col style={{color:'lime'}}>
+                                <SentimentVerySatisfiedOutlinedIcon onClick={handleClose}/>
                                 Best
                             </Col>
                         </Row>
@@ -79,7 +89,7 @@ function DashBoard (props) {
             <AppComponent/>
             
             <div style={{position:'fixed', bottom:'30px', left:'37%'}}>
-                <Link to='/login'><Button onClick={()=>logout()} className="ui fluid large button">Logout</Button></Link>
+                <Link to='/login'><Button onClick={()=>logout()} className="ui fluid primary large button">Logout</Button></Link>
             </div>
         </div>
     );

@@ -48,7 +48,7 @@ function AppComponent (){
                         <div className="column">
                             <Link to='/paylocityboard'><a>
                                 <img style={{height:'90px', width:'120px', overflow:'hidden'}} className="ui image" src={TodoIcon} alt="PaylocityBoard"/>
-                                Paylocity Board
+                                Paylo-Board
                             </a></Link>
                         </div>
                         <div className="column">
